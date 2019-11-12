@@ -1,0 +1,116 @@
+*{
+  margin: 10px;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif; 
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  color: #111;
+}
+
+.container .contactus{
+  max-width: 600px;
+  width: 100%;
+  padding: 5px 15px;
+  margin: 0 auto;
+}
+
+.container .contactus h1{
+  padding-top: 10%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.container .contactus h2{
+  padding-top: 0;
+  margin-bottom: 40px;
+  font-size: 12px;   
+  font-weight: 200;    
+  text-align: center;
+
+}
+
+.item{   
+  margin-bottom: 15px;
+}
+
+.item input[type="text"],
+.item textarea{
+  width: 100%;
+  background: none;    
+  border: 0;
+  border-bottom: 2px solid #111;
+  color: #111;
+  padding: 0 0 15px 0
+}
+
+.item.name_email{    
+  display: flex;
+  justify-content: space-between;
+}
+
+.item.name_email input[type="text"]{    
+  width: 48%;
+}
+
+.item textarea{   
+  height: 100px;
+  resize: none;
+}
+
+.btn{
+  margin-top: 30px;
+}
+
+.btn a{
+  display: block;
+  background-color: #775a95;
+  border-radius: 50px;    
+  width: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;    
+  text-align: center;
+  text-transform: uppercase;
+  height: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: all 0.5s linear;
+}
+
+.btn a:hover{
+  background-color: rgba(119,90,149,0.8);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;       
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #111;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #111;
+}
+
+@media screen and (max-width: 420px){
+  .container .contactus h1{
+    padding-top: 0%;
+  }
+  .item.name_email{
+    flex-direction: column;
+  }
+  .item.name_email input[type="text"]{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
